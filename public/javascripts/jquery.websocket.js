@@ -10,7 +10,7 @@
 	    target.trigger(name, data);
 	}
 
-	var ws = new WebSocket(config.entry + "?id="+config.room);
+	var ws = new WebSocket(config.entry);
 	ws.onopen = function() {
 	    fire('websocket::connect', ws);
 	}
